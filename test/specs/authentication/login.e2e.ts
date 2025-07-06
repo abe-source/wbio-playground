@@ -12,7 +12,7 @@ describe('Login flow', () => {
         await urlNav(ROUTES.login)
         await LoginPage.login(user.username, user.password)
         await expect(SecurePage.flashAlert).toBeExisting()
-        await expect(SecurePage.logoutButton).toBeExisting()
+        await expect(SecurePage.btnLogout).toBeExisting()
         await expect(SecurePage.flashAlert).toHaveText(
             expect.stringMatching('You logged into a secure area'))
         await expect(SecurePage.headerText).toHaveText('Secure Area')
@@ -23,7 +23,7 @@ describe('Login flow', () => {
     it('should logout successfully', async () => {
         await urlNav(ROUTES.login)
         await LoginPage.login(user.username, user.password)
-        await SecurePage.logoutButton.click()
+        await SecurePage.btnLogout.click()
         await expect(LoginPage.flashAlert)
         .toHaveText(
             expect.stringMatching('You logged out of the secure area!'))

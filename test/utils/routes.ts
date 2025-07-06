@@ -1,5 +1,5 @@
 export const ROUTES = {
     login: 'login',
-    dashboard: 'dashboard',
-    profile: 'user/profile',
+    home: '',
+    addRemoveElements: 'add_remove_elements',
 }
