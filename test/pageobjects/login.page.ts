@@ -2,7 +2,6 @@ import { $ } from '@wdio/globals'
 import Page from './page.js';
 
 class LoginPage extends Page {
-
     // Text
     public get flashAlert() { return $('#flash'); }
 
