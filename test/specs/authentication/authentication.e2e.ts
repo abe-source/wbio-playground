@@ -7,7 +7,7 @@ import { ROUTES } from '../../utils/routes.js'
 
 const user = getValidUser()
 
-describe('Login flow', () => {
+describe('Authentication flow', () => {
     it('should login with valid credentials', async () => {
         await urlNav(ROUTES.login)
         await LoginPage.login(user.username, user.password)
