@@ -1,5 +1,6 @@
 export const ROUTES = {
-    login: 'login',
     home: '',
+    login: 'login',
     addRemoveElements: 'add_remove_elements/',
+    brokenImages: 'broken_images',
 }
