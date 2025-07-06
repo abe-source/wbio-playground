@@ -8,7 +8,7 @@ class SecurePage extends Page {
     public get subHeaderText() { return $('h4.subheader'); }
 
     // Buttons
-    public get logoutButton() { return $('a[href="/logout"]'); }
+    public get btnLogout() { return $('a[href="/logout"]'); }
 }
 
 export default new SecurePage();
