@@ -1,0 +1,12 @@
+import { $ } from '@wdio/globals'
+import Page from './page.js';
+
+class DragAndDropPage extends Page {
+    // Text
+    public get headerText() { return $('h3'); }
+    // Boxes
+    public get columnA() { return $('#column-a'); }
+    public get columnB() { return $('#column-b'); }
+}
+
+export default new DragAndDropPage();
