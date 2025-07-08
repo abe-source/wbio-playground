@@ -1,7 +1,7 @@
 import { expect } from '@wdio/globals'
-import DragAndDropPage from '../../pageobjects/dragAndDrop.page.ts'
-import { urlNav } from '../../utils/urlNav.js'
-import { ROUTES } from '../../utils/routes.js'
+import DragAndDropPage from '../../../pageobjects/web/dragAndDrop.page.ts';
+import { urlNav } from '../../../utils/urlNav.js'
+import { ROUTES } from '../../../utils/routes.js'
 
 describe('Drag and Drop', () => {
     it('should drag and drop elements', async () => {

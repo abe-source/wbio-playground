@@ -1,9 +1,9 @@
 import { expect } from '@wdio/globals'
-import LoginPage from '../../pageobjects/login.page.js'
-import SecurePage from '../../pageobjects/secure.page.js'
-import { getValidUser } from '../../utils/user.js'
-import { urlNav } from '../../utils/urlNav.js'
-import { ROUTES } from '../../utils/routes.js'
+import LoginPage from '../../../pageobjects/web/login.page.ts';
+import SecurePage from '../../../pageobjects/web/secure.page.ts';
+import { getValidUser } from '../../../utils/user.js'
+import { urlNav } from '../../../utils/urlNav.js'
+import { ROUTES } from '../../../utils/routes.js'
 
 const user = getValidUser()
 

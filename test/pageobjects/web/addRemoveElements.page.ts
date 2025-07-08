@@ -1,7 +1,7 @@
 import { $, $$ } from '@wdio/globals'
-import Page from './page.js';
+import WebPage from '../shared/web.page.js';
 
-class AddRemoveElementsPage extends Page {
+class AddRemoveElementsPage extends WebPage {
     // Text
     public get headerText() { return $('h3'); }
 

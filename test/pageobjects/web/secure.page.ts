@@ -1,7 +1,7 @@
 import { $ } from '@wdio/globals'
-import Page from './page.js';
+import WebPage from '../shared/web.page.js';
 
-class SecurePage extends Page { 
+class SecurePage extends WebPage { 
     // Text
     public get flashAlert() { return $('#flash'); }
     public get headerText() { return $('h2'); }

@@ -1,6 +1,6 @@
 # WebdriverIO Test Automation Project
 
-This project uses WebdriverIO for end-to-end testing with Allure reporting.
+This project uses WebdriverIO for end-to-end testing of both web and mobile applications with Allure reporting.
 
 ## Setup
 
@@ -10,30 +10,37 @@ npm install
 
 ## Running Tests
 
+### Web Tests Only
 ```bash
-npm run wdio
+npm run test:web
 ```
+
+### Mobile Tests Only
+```bash
+npm run test:mobile
+```
+
+## Available Scripts
+
+- `npm run test:web` - Run web tests only
+- `npm run test:mobile` - Run mobile tests only
+- `npm run report:generate` - Generate HTML report from test results
+- `npm run report:open` - Open the generated report in browser
+- `npm run report:serve` - Serve the report on a local server
 
 ## Allure Reports
 
 This project is configured with Allure Reporter for comprehensive test reporting.
 
-### Available Scripts
-
-- `npm run wdio` - Run the tests
-- `npm run report:generate` - Generate HTML report from test results
-- `npm run report:open` - Open the generated report in browser
-- `npm run report:serve` - Serve the report on a local server
-
 ### Workflow
 
-1. **Run tests**: `npm run wdio`
+1. **Run tests**: `npm run test:web` or `npm run test:mobile`
 2. **Generate report**: `npm run report:generate`
 3. **View report**: `npm run report:open`
 
 Or use the combined approach:
 ```bash
-npm run wdio && npm run report:generate && npm run report:open
+npm run test:web && npm run report:generate && npm run report:open
 ```
 
 ### Report Locations
@@ -50,16 +57,8 @@ npm run wdio && npm run report:generate && npm run report:open
 - Detailed test logs
 - Parallel execution support
 
-## Project Structure
+## Configuration
 
-```
-wdio/
-├── test/
-│   ├── pageobjects/     # Page Object Models
-│   ├── specs/          # Test specifications
-│   └── utils/          # Utility functions
-├── allure-results/     # Test results (generated)
-├── allure-report/      # HTML reports (generated)
-├── wdio.conf.ts        # WebdriverIO configuration
-└── package.json        # Dependencies and scripts
-``` 
+### Web Configuration (`wdio.web.conf.ts`)
+
+### Mobile Configuration (`wdio.mobile.conf.ts`)

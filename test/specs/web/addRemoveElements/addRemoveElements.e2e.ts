@@ -1,7 +1,7 @@
 import { expect } from '@wdio/globals'
-import AddRemoveElementsPage from '../../pageobjects/addRemoveElements.page.ts'
-import { urlNav } from '../../utils/urlNav.js'
-import { ROUTES } from '../../utils/routes.js'
+import AddRemoveElementsPage from '../../../pageobjects/web/addRemoveElements.page.ts';
+import { urlNav } from '../../../utils/urlNav.js'
+import { ROUTES } from '../../../utils/routes.js'
 
 describe('Add Remove Elements', () => {
     it('should add and remove elements', async () => {

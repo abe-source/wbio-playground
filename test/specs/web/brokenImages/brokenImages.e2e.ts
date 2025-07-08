@@ -1,7 +1,7 @@
 import { expect } from '@wdio/globals'
-import BrokenImagesPage from '../../pageobjects/brokenImages.page.ts'
-import { urlNav } from '../../utils/urlNav.js'
-import { ROUTES } from '../../utils/routes.js'
+import BrokenImagesPage from '../../../pageobjects/web/brokenImages.page.ts';
+import { urlNav } from '../../../utils/urlNav.js'
+import { ROUTES } from '../../../utils/routes.js'
 
 describe('Broken Images', () => {
     it('should check for broken images', async () => {

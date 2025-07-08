@@ -1,4 +1,4 @@
-export default class Page {
+export default class WebPage {
     async clickElementMultipleTimes(element: any, count: number) {
         for (let i = 0; i < count; i++) {
             await element.click()
