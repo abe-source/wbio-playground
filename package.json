@@ -14,12 +14,8 @@
     "appium-uiautomator2-driver": "^4.2.5"
   },
   "scripts": {
-    "wdio": "wdio run ./wdio.conf.ts",
     "wdio:web": "wdio run ./wdio.web.conf.ts",
     "wdio:mobile": "wdio run ./wdio.mobile.conf.ts",
-    "test:web": "wdio run ./wdio.web.conf.ts",
-    "test:mobile": "wdio run ./wdio.mobile.conf.ts",
-    "test:all": "npm run test:web && npm run test:mobile",
     "report:generate": "allure generate allure-results --clean",
     "report:open": "allure open",
     "report:serve": "allure serve allure-results"
