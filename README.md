@@ -12,18 +12,18 @@ npm install
 
 ### Web Tests Only
 ```bash
-npm run test:web
+npm run wdio:web
 ```
 
 ### Mobile Tests Only
 ```bash
-npm run test:mobile
+npm run wdio:mobile
 ```
 
 ## Available Scripts
 
-- `npm run test:web` - Run web tests only
-- `npm run test:mobile` - Run mobile tests only
+- `npm run wdio:web` - Run web tests only
+- `npm run wdio:mobile` - Run mobile tests only
 - `npm run report:generate` - Generate HTML report from test results
 - `npm run report:open` - Open the generated report in browser
 - `npm run report:serve` - Serve the report on a local server
@@ -34,13 +34,13 @@ This project is configured with Allure Reporter for comprehensive test reporting
 
 ### Workflow
 
-1. **Run tests**: `npm run test:web` or `npm run test:mobile`
+1. **Run tests**: `npm run wdio:web` or `npm run wdio:mobile`
 2. **Generate report**: `npm run report:generate`
 3. **View report**: `npm run report:open`
 
 Or use the combined approach:
 ```bash
-npm run test:web && npm run report:generate && npm run report:open
+npm run wdio:web && npm run report:generate && npm run report:open
 ```
 
 ### Report Locations
