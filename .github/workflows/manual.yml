@@ -26,10 +26,10 @@ jobs:
         run: npm ci
 
       - name: Run WDIO Web Tests
-        run: npm wdio wdio.web.conf.ts
+        run: npm run wdio:web
 
       - name: Generate Allure Report
-        run: npm allure generate allure-results --clean
+        run: npm run report:generate
 
       - name: Upload Allure Results
         if: always()
