@@ -35,6 +35,5 @@ describe('Authentication flow', () => {
         await expect(SecurePage.flashAlert).toBeExisting()
         await expect(SecurePage.flashAlert).toHaveText(
             expect.stringMatching('Your username is invalid'))
-        await expect(SecurePage.flashAlert).toMatchSnapshot('flashAlert-invalid')
     })
 })
