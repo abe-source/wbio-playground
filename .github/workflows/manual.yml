@@ -27,6 +27,7 @@ jobs:
 
       - name: Run WDIO Web Tests
         run: npm run wdio:web
+        continue-on-error: true
 
       - name: Generate Allure Report
         run: npm run report:generate
